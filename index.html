@@ -1,27 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Magic BOX</title>
-    <link type="text/css" href="style.css" media="all" rel="stylesheet">
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="./assets/js/fontawesome.js"></script>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./assets/css/styles.css" rel="stylesheet" />
 </head>
-<body>
-
-<ol class="toc-list">
-    <li>
-        <a href="./front-end/simlpe-tabs">
-            <span class="title">Pure CSS tabs without Javascript</span>
-            <span class="page">Page 1</span>
-        </a>
-
-        <ol>
-            <!-- subsection items -->
-        </ol>
-    </li>
-</ol>
-
+<body id="page-top">
+<!-- Portfolio Section-->
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <div class="container d-flex align-items-center flex-column mb-5">
+            <h1 class="masthead-heading text-uppercase mb-5">Magic BOX</h1>
+            <!-- Masthead Avatar Image-->
+<!--            <img class="masthead-avatar" src="assets/images/logo.png" alt="Logo" />-->
+            <img class="masthead-avatar" src="assets/images/logo.jpeg" alt="Logo" />
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row justify-content-center pt-5">
+            <div class="col-md-12 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/images/discuss.jpg" alt="..." />
+                </div>
+                <iframe src="./dist/discuss.html"></iframe>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/images/fr.png" alt="..." />
+                </div>
+                <iframe src="./dist/front.html"></iframe>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/images/bk.png" alt="..." />
+                </div>
+                <iframe src="./dist/back.html"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
