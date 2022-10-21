@@ -6,21 +6,23 @@
 </head>
 <body>
 <code>
-    function translate_woocommerce( $translation, $text, $domain ) {
-        if ($domain == 'woocommerce') {
-            switch ($text) {
-                case 'SKU':
-                    $translation = 'ISBN';
-                    break;
-                case 'SKU:':
-                    $translation = 'ISBN:';
-                    break;
-            }
+<pre>
+function translate_woocommerce( $translation, $text, $domain ) {
+    if ($domain == 'woocommerce') {
+        switch ($text) {
+            case 'SKU':
+                $translation = 'ISBN';
+                break;
+            case 'SKU:':
+                $translation = 'ISBN:';
+                break;
         }
-        return $translation;
     }
+    return $translation;
+}
 
-    add_filter('gettext', 'translate_woocommerce', 10, 3);
+add_filter('gettext', 'translate_woocommerce', 10, 3);
+</pre>
 </code>
 </body>
 </html>
