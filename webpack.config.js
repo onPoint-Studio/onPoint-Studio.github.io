@@ -76,7 +76,7 @@ function getLinksList( LinksTree ) {
             if( type === 'directory' ) {
                 let linkPath = item.path;
                 let name = item.name;
-                linksList += '<li><a href="'+ "./../" + linkPath +'">'+ name +'</a></li>';
+                linksList += '<li><a target="_blank" href="'+ "./../" + linkPath +'">'+ name +'</a></li>';
             }
         });
         linksList += '</ul>';
